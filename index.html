@@ -35,44 +35,8 @@
             background: var(--bg);
             color: var(--text);
             overflow-x: hidden;
-            cursor: none;
         }
-        /* CURSOR */
-        
-        .cursor {
-            width: 12px;
-            height: 12px;
-            background: var(--gold);
-            border-radius: 50%;
-            position: fixed;
-            pointer-events: none;
-            z-index: 9999;
-            transform: translate(-50%, -50%);
-            transition: width 0.2s, height 0.2s;
-        }
-        
-        .cursor-ring {
-            width: 36px;
-            height: 36px;
-            border: 1px solid rgba(245, 166, 35, 0.4);
-            border-radius: 50%;
-            position: fixed;
-            pointer-events: none;
-            z-index: 9998;
-            transform: translate(-50%, -50%);
-            transition: width 0.2s, height 0.2s;
-        }
-        
-        .cursor.hov {
-            width: 8px;
-            height: 8px;
-        }
-        
-        .cursor-ring.hov {
-            width: 50px;
-            height: 50px;
-            border-color: var(--gold);
-        }
+
         /* PARTICLES */
         
         .particles {
@@ -352,7 +316,6 @@
             letter-spacing: 0.05em;
             transition: all 0.3s;
             border: none;
-            cursor: none;
             display: inline-flex;
             align-items: center;
             gap: 8px;
@@ -375,7 +338,6 @@
             letter-spacing: 0.05em;
             transition: all 0.3s;
             border: 1px solid rgba(255, 255, 255, 0.2);
-            cursor: none;
             display: inline-flex;
             align-items: center;
             gap: 8px;
@@ -1353,8 +1315,6 @@
 
 <body>
 
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-ring" id="cursorRing"></div>
     <div class="particles" id="particles"></div>
 
     <!-- NAV -->
@@ -1390,7 +1350,7 @@
                 <p class="hero-desc">[Masukkan deskripsi baru di sini...]</p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn-gold"><i class="fa-solid fa-folder-open"></i> View Projects</a>
-                    <a href="ATS NUrsa.pdf" download class="btn-outline"><i class="fa-solid fa-download"></i> Download CV</a>
+                    <a href="nursacv.pdf" download class="btn-outline"><i class="fa-solid fa-download"></i> Download CV</a>
                 </div>
             </div>
             <div class="hero-stats">
@@ -1824,15 +1784,7 @@ for (let i = 0; i < 55; i++) {
   pc.appendChild(d);
 }
 
-// ══ CURSOR ══
-const cur = document.getElementById('cursor'), ring = document.getElementById('cursorRing');
-let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;});
-(function tick(){cur.style.left=mx+'px';cur.style.top=my+'px';rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(tick);})();
-document.querySelectorAll('a,button,.stat-box,.project-card,.cred-card,.skill-group,.filter-btn').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{cur.classList.add('hov');ring.classList.add('hov');});
-  el.addEventListener('mouseleave',()=>{cur.classList.remove('hov');ring.classList.remove('hov');});
-});
+
 
 // ══ TYPING ══
 const roles=['Data Analyst','Information Systems Student','Process Improvement Enthusiast','SAP ERP Practitioner'];
