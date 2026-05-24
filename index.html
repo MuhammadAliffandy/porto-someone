@@ -1347,7 +1347,7 @@
                 <div class="hero-label">Available for internship</div>
                 <h1 class="hero-name">Nur Sa'diah<br><span>Nasution</span></h1>
                 <p class="hero-role"><span class="type-text" id="typeText"></span></p>
-                <p class="hero-desc">[Masukkan deskripsi baru di sini...]</p>
+                <p class="hero-desc">An Information Systems student interested in technology, data analysis, and digital system development. I have experience managing and analyzing operational and HR data, as well as creating digital solutions to help improve work efficiency.</p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn-gold"><i class="fa-solid fa-folder-open"></i> View Projects</a>
                     <a href="nursacv.pdf" download class="btn-outline"><i class="fa-solid fa-download"></i> Download CV</a>
@@ -1355,20 +1355,20 @@
             </div>
             <div class="hero-stats">
                 <div class="stat-box">
-                    <div class="stat-num">250K</div>
-                    <div class="stat-label">Transactions analyzed</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-num">85%</div>
-                    <div class="stat-label">Inventory discrepancy reduced</div>
-                </div>
-                <div class="stat-box">
                     <div class="stat-num">3.87</div>
                     <div class="stat-label">GPA out of 4.00</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-num">15%</div>
-                    <div class="stat-label">HR data reliability improved</div>
+                    <div class="stat-num">10+</div>
+                    <div class="stat-label">Academic Projects</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num">6+</div>
+                    <div class="stat-label">Tools & Tech Stack</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num">3+</div>
+                    <div class="stat-label">Real-world Cases Analyzed</div>
                 </div>
             </div>
         </div>
@@ -1386,7 +1386,7 @@
             <div class="about-content reveal">
                 <p class="section-tag">About Me</p>
                 <h2 class="about-title">Data Enthusiast &amp; System Builder</h2>
-                <p class="about-text">[Masukkan deskripsi baru di sini...]</p>
+                <p class="about-text">An Information Systems student interested in technology, data analysis, and digital system development. I have experience managing and analyzing operational and HR data, as well as creating digital solutions to help improve work efficiency. I am proficient in Excel, SQL, and data analysis tools, and I have an interest in system design, UI/UX, and business process development. Enjoys learning new things and combining analytical skills with technology to create useful and user-friendly solutions.</p>
                 <div class="about-tags">
                     <span class="about-tag">SQL</span><span class="about-tag">R Programming</span>
                     <span class="about-tag">Python</span><span class="about-tag">Excel Advanced</span>
@@ -1514,8 +1514,8 @@
         const projects = [{
             id: 1,
             title: "E-Commerce Customer Analytics",
-            shortDesc: "[Masukkan deskripsi baru di sini...]",
-            fullDesc: "[Masukkan deskripsi baru di sini...]",
+            shortDesc: "As a Data Analyst for my final research project, I independently executed the Knowledge Discovery in Databases (KDD) cycle to optimize e-commerce business strategies. I processed a large-scale dataset of 250,000 transactions using R programming to perform data cleaning, missing value handling, and outlier detection. By integrating RFM analysis and PCA dimensionality reduction, I conducted a comparative experiment of four machine learning algorithms : K-Means, DBSCAN, GMM, and Mean-Shift , scientifically proving that K-Means delivered the most optimal segmentation performance. My primary contribution was successfully mapping three strategic customer profiles: Champions, Potential Loyalists, and At-Risk Customers . which I transformed into data-driven marketing recommendations including VIP loyalty programs and reactivation campaigns to reduce customer churn.",
+            fullDesc: "As a Data Analyst for my final research project, I independently executed the Knowledge Discovery in Databases (KDD) cycle to optimize e-commerce business strategies. I processed a large-scale dataset of 250,000 transactions using R programming to perform data cleaning, missing value handling, and outlier detection. By integrating RFM analysis and PCA dimensionality reduction, I conducted a comparative experiment of four machine learning algorithms : K-Means, DBSCAN, GMM, and Mean-Shift , scientifically proving that K-Means delivered the most optimal segmentation performance. My primary contribution was successfully mapping three strategic customer profiles: Champions, Potential Loyalists, and At-Risk Customers . which I transformed into data-driven marketing recommendations including VIP loyalty programs and reactivation campaigns to reduce customer churn.",
             tags: ["R Programming", "Machine Learning", "RFM Analysis", "Data Visualization", "KDD", "K-Means"],
             category: "data",
             icon: "📊",
@@ -1547,13 +1547,13 @@
         }, {
             id: 2,
             title: "EmployeeHub — HR Management System",
-            shortDesc: "[Masukkan deskripsi baru di sini...]",
-            fullDesc: "[Masukkan deskripsi baru di sini...]",
+            shortDesc: "I took the initiative to create EmployeeHub to address HR administrative issues that were still manual and time-consuming. Through this project, I analyzed the shortcomings of spreadsheet-based systems (Excel) and designed a new, fully integrated data workflow. As a result, when HR records employee attendance, the system automatically calculates payroll deductions or bonuses in real time without the need for manual data entry. This automation successfully streamlined the process and saved HR up to 47 minutes of work time per day. Additionally, I added an automatic alert feature for employees with frequent absences, as well as an AI-powered reporting module to help management quickly assess team performance and make more informed decisions.",
+            fullDesc: "I took the initiative to create EmployeeHub to address HR administrative issues that were still manual and time-consuming. Through this project, I analyzed the shortcomings of spreadsheet-based systems (Excel) and designed a new, fully integrated data workflow. As a result, when HR records employee attendance, the system automatically calculates payroll deductions or bonuses in real time without the need for manual data entry. This automation successfully streamlined the process and saved HR up to 47 minutes of work time per day. Additionally, I added an automatic alert feature for employees with frequent absences, as well as an AI-powered reporting module to help management quickly assess team performance and make more informed decisions.",
             tags: ["HTML", "CSS", "JavaScript", "Dashboard UI", "CRUD", "Data Integration"],
             category: "system",
             icon: "👥",
             iconLabel: "HR Dashboard",
-            image: "assets/images/project2.png",
+            image: "emplyeehub/employehub.jpeg",
             color: "#6B8CAE",
             highlights: [{
                 num: "47min",
@@ -1566,12 +1566,15 @@
                 label: "Auto payroll calculation"
             }],
             screens: [{
+                image: "emplyeehub/maindashboard.jpeg",
                 icon: "📊",
                 label: "Main Dashboard"
             }, {
+                image: "emplyeehub/hrdashboard.jpeg",
                 icon: "📅",
                 label: "Attendance Calendar"
             }, {
+                image: "emplyeehub/payroll.jpeg",
                 icon: "💰",
                 label: "Payroll Calculator"
             }],
@@ -1580,8 +1583,8 @@
         }, {
             id: 3,
             title: "POS System for Local F&B UMKM",
-            shortDesc: "[Masukkan deskripsi baru di sini...]",
-            fullDesc: "[Masukkan deskripsi baru di sini...]",
+            shortDesc: "In this group project, I served as Lead Developer and System Architect. Our primary focus was to digitalize the manual operations of a local meatball stall that previously struggled with uncontrolled stock, missed orders, and inaccurate financial calculations. Applying the SDLC methodology, I led the process from requirements analysis to integrated system design. I developed the application architecture using C# and built a SQL database to ensure all transaction and inventory data were centrally stored. I integrated Crystal Reports to automate real-time financial reporting. As a result, the system successfully eliminated manual errors and provided full operational efficiency, enabling the owner to monitor the business accurately.",
+            fullDesc: "In this group project, I served as Lead Developer and System Architect. Our primary focus was to digitalize the manual operations of a local meatball stall that previously struggled with uncontrolled stock, missed orders, and inaccurate financial calculations. Applying the SDLC methodology, I led the process from requirements analysis to integrated system design. I developed the application architecture using C# and built a SQL database to ensure all transaction and inventory data were centrally stored. I integrated Crystal Reports to automate real-time financial reporting. As a result, the system successfully eliminated manual errors and provided full operational efficiency, enabling the owner to monitor the business accurately.",
             tags: ["C#", "SQL Server", "Crystal Reports", "SDLC", "Visual Studio", "Database Design"],
             category: "system",
             icon: "🖥️",
@@ -1613,8 +1616,8 @@
         }, {
             id: 4,
             title: "SolviHelp — Repair Solution Platform",
-            shortDesc: "[Masukkan deskripsi baru di sini...]",
-            fullDesc: "[Masukkan deskripsi baru di sini...]",
+            shortDesc: "SolviHelp is a mobile platform that provides complete repair solutions, allowing users to consult technicians, receive real-time guidance through video calls, or book technicians for on-site service. This was an academic group project, where I acted as the initiator and UI/UX designer, proposing the core idea and designing the end-to-end user experience. I introduced the video call feature as the main innovation, enabling users to fix problems independently with direct guidance from technicians — transforming passive learning, such as watching tutorials, into a more interactive and practical experience. The integration of chat consultation and technician booking provides users with flexibility based on their needs, improving efficiency and accessibility compared to traditional repair services.",
+            fullDesc: "SolviHelp is a mobile platform that provides complete repair solutions, allowing users to consult technicians, receive real-time guidance through video calls, or book technicians for on-site service. This was an academic group project, where I acted as the initiator and UI/UX designer, proposing the core idea and designing the end-to-end user experience. I introduced the video call feature as the main innovation, enabling users to fix problems independently with direct guidance from technicians — transforming passive learning, such as watching tutorials, into a more interactive and practical experience. The integration of chat consultation and technician booking provides users with flexibility based on their needs, improving efficiency and accessibility compared to traditional repair services.",
             tags: ["Figma", "UI/UX Design", "Mobile Design", "User Research", "Prototyping", "Service Design"],
             category: "design",
             icon: "📱",
