@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         :root {
-            --bg: #080808;
-            --bg2: #111111;
-            --bg3: #161616;
+            --bg: #f1f4f9;
+            --bg2: #ffffff;
+            --bg3: #eef2f6;
             --gold: #F5A623;
-            --gold2: #ffbe57;
+            --gold2: #d48b11;
             --purple: #8B5CF6;
-            --text: #f0ece4;
-            --muted: #6b7280;
-            --border: rgba(255, 255, 255, 0.08);
+            --text: #1a1a1a;
+            --muted: #5f6368;
+            --border: rgba(0, 0, 0, 0.08);
         }
 
         * {
@@ -90,7 +90,7 @@
             align-items: center;
             justify-content: space-between;
             padding: 20px 60px;
-            background: rgba(8, 8, 8, 0.88);
+            background: rgba(241, 244, 249, 0.88);
             backdrop-filter: blur(20px);
             border-bottom: 0.5px solid var(--border);
             transition: padding 0.3s;
@@ -182,7 +182,7 @@
             display: none;
             position: fixed;
             inset: 0;
-            background: rgba(8, 8, 8, 0.97);
+            background: rgba(241, 244, 249, 0.97);
             z-index: 490;
             flex-direction: column;
             align-items: center;
@@ -345,7 +345,7 @@
             text-decoration: none;
             letter-spacing: 0.05em;
             transition: all 0.3s;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(0, 0, 0, 0.2);
             display: inline-flex;
             align-items: center;
             gap: 8px;
@@ -579,7 +579,7 @@
         }
 
         .project-mockup {
-            background: white;
+            background: var(--bg2);
             height: 200px;
             display: flex;
             align-items: center;
@@ -589,9 +589,8 @@
         }
 
         .mockup-inner {
-            width: calc(100% - 32px);
-            height: calc(100% - 32px);
-            border-radius: 8px;
+            width: 100%;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -600,8 +599,6 @@
             font-size: 0.85rem;
             font-weight: 600;
             color: #333;
-            border: 1px solid #e5e5e5;
-            background: #f8f8f8;
             transition: transform 0.3s;
         }
 
@@ -659,11 +656,11 @@
 
         .project-tag {
             padding: 4px 12px;
-            border: 0.5px solid rgba(255, 255, 255, 0.12);
+            border: 0.5px solid rgba(0, 0, 0, 0.12);
             border-radius: 20px;
             font-size: 0.7rem;
-            color: rgba(255, 255, 255, 0.55);
-            background: rgba(255, 255, 255, 0.04);
+            color: rgba(0, 0, 0, 0.55);
+            background: rgba(0, 0, 0, 0.04);
         }
 
         .project-footer {
@@ -895,7 +892,7 @@
 
         .modal-desc {
             font-size: 0.9rem;
-            color: rgba(240, 236, 228, 0.75);
+            color: rgba(26, 26, 26, 0.75);
             line-height: 1.85;
         }
 
@@ -908,11 +905,11 @@
 
         .modal-tag {
             padding: 6px 14px;
-            border: 0.5px solid rgba(255, 255, 255, 0.12);
+            border: 0.5px solid rgba(0, 0, 0, 0.12);
             border-radius: 20px;
             font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.6);
-            background: rgba(255, 255, 255, 0.04);
+            color: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.04);
         }
 
         /* MODAL HIGHLIGHTS */
@@ -987,7 +984,7 @@
             border-radius: 50px;
             text-decoration: none;
             transition: all 0.3s;
-            border: 0.5px solid rgba(255, 255, 255, 0.15);
+            border: 0.5px solid rgba(0, 0, 0, 0.15);
             flex: 1;
             justify-content: center;
         }
@@ -1618,7 +1615,7 @@
                 icon: "📋",
                 label: "KDD Pipeline Flow"
             }],
-            github: "https://github.com/",
+            github: "https://github.com/nursanst22/E-Commerce-Customer-Analytics",
             live: "#"
         }, {
             id: 2,
@@ -1665,7 +1662,7 @@
             category: "system",
             icon: "🖥️",
             iconLabel: "POS System",
-            image: "assets/images/project3.png",
+            image: "pos/WhatsApp Image 2026-05-25 at 09.28.45 (1).jpeg",
             color: "#9B7EBD",
             highlights: [{
                 num: "0%",
@@ -1678,12 +1675,15 @@
                 label: "Full dev lifecycle applied"
             }],
             screens: [{
+                image: "pos/WhatsApp Image 2026-05-25 at 09.28.45.jpeg",
                 icon: "🔐",
                 label: "Login Module"
             }, {
+                image: "pos/WhatsApp Image 2026-05-25 at 09.28.46 (1).jpeg",
                 icon: "🛒",
                 label: "Order & Payment"
             }, {
+                image: "pos/WhatsApp Image 2026-05-25 at 09.28.46 (2).jpeg",
                 icon: "📑",
                 label: "Sales Report"
             }],
@@ -1731,6 +1731,7 @@
             category: "design",
             icon: "🛍️",
             iconLabel: "E-Commerce Design",
+            image: "salesWebDesign/WhatsApp Image 2026-05-25 at 09.28.47.jpeg",
             color: "#E05252",
             highlights: [{
                 num: "5+",
@@ -1743,12 +1744,15 @@
                 label: "Component library built"
             }],
             screens: [{
+                image: "salesWebDesign/WhatsApp Image 2026-05-25 at 09.28.47 (1).jpeg",
                 icon: "🏪",
                 label: "Product Catalog"
             }, {
+                image: "salesWebDesign/WhatsApp Image 2026-05-25 at 09.28.47 (2).jpeg",
                 icon: "🛒",
                 label: "Cart & Checkout"
             }, {
+                image: "salesWebDesign/WhatsApp Image 2026-05-25 at 09.28.47 (3).jpeg",
                 icon: "👤",
                 label: "Auth Screens"
             }],
@@ -1769,7 +1773,7 @@
       <div class="project-card reveal" onclick="openModal(${p.id})">
         <div class="project-mockup">
           <div class="mockup-inner">
-            ${p.image ? `<img src="${p.image}" alt="${p.title}" style="width:100%; height:100%; object-fit:cover; border-radius: 8px;">` : `<span class="mockup-icon">${p.icon}</span><span>${p.iconLabel}</span>`}
+            ${p.image ? `<img src="${p.image}" alt="${p.title}" style="width:100%; height:100%; object-fit:cover;">` : `<span class="mockup-icon">${p.icon}</span><span>${p.iconLabel}</span>`}
           </div>
           <div class="click-hint"><i class="fa-solid fa-expand" style="font-size:0.6rem;"></i> Click to expand</div>
         </div>
@@ -1808,7 +1812,7 @@
 
             document.getElementById('modalPreview').innerHTML = `
     <div class="modal-preview-inner">
-      ${p.image ? `<img src="${p.image}" alt="${p.title}" style="width:100%; height:100%; object-fit:cover; border-radius: 8px;">` : `
+      ${p.image ? `<img src="${p.image}" alt="${p.title}" style="width:100%; height:100%; object-fit:cover;">` : `
       <div class="modal-preview-icon">${p.icon}</div>
       <div class="modal-preview-label">${p.iconLabel}</div>
       `}
@@ -1817,7 +1821,7 @@
             document.getElementById('modalScreenshots').innerHTML = p.screens.map(s => `
     <div class="screenshot">
       <div class="screenshot-inner">
-        ${s.image ? `<img src="${s.image}" alt="${s.label}" style="width:100%; height:100%; object-fit:cover; border-radius: 8px;">` : `
+        ${s.image ? `<img src="${s.image}" alt="${s.label}" style="width:100%; height:100%; object-fit:cover;">` : `
         <span style="font-size:1.4rem;">${s.icon}</span>
         <span>${s.label}</span>
         `}
