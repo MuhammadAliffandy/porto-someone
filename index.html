@@ -359,36 +359,44 @@
         .hero-stats {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 12px;
-            flex: 0 0 280px;
+            gap: 16px;
+            flex: 0 0 340px;
             opacity: 0;
             animation: fadeUp 0.6s ease forwards 1.2s;
         }
 
         .stat-box {
             background: var(--bg2);
-            border: 0.5px solid var(--border);
-            border-radius: 16px;
-            padding: 20px;
-            transition: border-color 0.3s, transform 0.3s;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+            transition: all 0.3s ease;
         }
 
         .stat-box:hover {
-            border-color: rgba(245, 166, 35, 0.4);
-            transform: translateY(-4px);
+            border-color: rgba(245, 166, 35, 0.5);
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(245, 166, 35, 0.1);
         }
 
         .stat-num {
             font-family: 'Syne', sans-serif;
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: 800;
             color: var(--gold);
+            line-height: 1;
+            margin-bottom: 8px;
         }
 
         .stat-label {
-            font-size: 0.75rem;
+            font-size: 0.85rem;
             color: var(--muted);
-            margin-top: 4px;
+            line-height: 1.4;
+            font-weight: 500;
         }
 
         @keyframes fadeUp {
@@ -1593,7 +1601,7 @@
             category: "data",
             icon: "📊",
             iconLabel: "Analytics Dashboard",
-            image: "assets/images/project1.png",
+            image: "eco-analyst/preview.jpeg",
             color: "#4A7C6F",
             highlights: [{
                 num: "250K",
@@ -1606,12 +1614,15 @@
                 label: "Customer profiles mapped"
             }],
             screens: [{
+                image: "eco-analyst/WhatsApp Image 2026-05-26 at 17.06.15.jpeg",
                 icon: "📈",
                 label: "RFM Distribution Chart"
             }, {
+                image: "eco-analyst/WhatsApp Image 2026-05-26 at 17.06.15 (1).jpeg",
                 icon: "🗂️",
                 label: "K-Means Cluster Map"
             }, {
+                image: "eco-analyst/WhatsApp Image 2026-05-26 at 17.06.15 (2).jpeg",
                 icon: "📋",
                 label: "KDD Pipeline Flow"
             }],
@@ -1662,7 +1673,7 @@
             category: "system",
             icon: "🖥️",
             iconLabel: "POS System",
-            image: "pos/WhatsApp Image 2026-05-25 at 09.28.45 (1).jpeg",
+            image: "pos/WhatsApp Image 2026-05-25 at 09.28.45.jpeg",
             color: "#9B7EBD",
             highlights: [{
                 num: "0%",
@@ -1698,7 +1709,7 @@
             category: "design",
             icon: "📱",
             iconLabel: "Mobile App Design",
-            image: "assets/images/project4.png",
+            image: "sovihelp/sovihelppreview.jpeg",
             color: "#E08F3A",
             highlights: [{
                 num: "UX",
@@ -1711,12 +1722,15 @@
                 label: "Core innovation feature"
             }],
             screens: [{
+                image: "sovihelp/WhatsApp Image 2026-05-26 at 08.22.03.jpeg",
                 icon: "🏠",
                 label: "Home Screen"
             }, {
+                image: "sovihelp/WhatsApp Image 2026-05-26 at 08.22.03 (1).jpeg",
                 icon: "📞",
                 label: "Video Call Flow"
             }, {
+                image: "sovihelp/WhatsApp Image 2026-05-26 at 08.22.03 (2).jpeg",
                 icon: "📍",
                 label: "Technician Booking"
             }],
