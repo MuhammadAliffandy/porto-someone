@@ -1443,17 +1443,16 @@
             <div class="about-content reveal">
                 <p class="section-tag">About Me</p>
                 <h2 class="about-title">Data Enthusiast &amp; System Builder</h2>
-                <p class="about-text">An Information Systems student interested in technology, data analysis, and
-                    digital system development. I have experience managing and analyzing operational and HR data, as
-                    well as creating digital solutions to help improve work efficiency. I am proficient in Excel, SQL,
-                    and data analysis tools, and I have an interest in system design, UI/UX, and business process
-                    development. Enjoys learning new things and combining analytical skills with technology to create
-                    useful and user-friendly solutions.</p>
+                <p class="about-text">As a final-year Information Systems student, I am deeply passionate about bridging the gap between data analytics and digital system development. With hands-on experience in managing operational workflows and HR data, I specialize in creating digital solutions that significantly improve business efficiency. Whether it is performing predictive data analysis, designing an integrated database system, or crafting intuitive UI/UX, I thrive on combining analytical problem-solving with technology. Proficient in R, SQL, and Advanced Excel, my ultimate goal is to transform complex business challenges into actionable insights and user-friendly applications.</p>
                 <div class="about-tags">
-                    <span class="about-tag">SQL</span><span class="about-tag">R Programming</span>
-                    <span class="about-tag">Python</span><span class="about-tag">Excel Advanced</span>
-                    <span class="about-tag">SAP ERP</span><span class="about-tag">Data Analysis</span>
+                    <span class="about-tag">SQL</span>
+                    <span class="about-tag">R Programming</span>
+                    <span class="about-tag">Excel Advanced</span>
+                    <span class="about-tag">SAP ERP</span>
+                    <span class="about-tag">Data Analytics</span>
+                    <span class="about-tag">System Design</span>
                     <span class="about-tag">Process Improvement</span>
+                    <span class="about-tag">UI/UX Prototyping</span>
                 </div>
             </div>
         </div>
@@ -1593,6 +1592,78 @@
     <script>
         // ══ PROJECT DATA ══
         const projects = [{
+            id: 101,
+            title: "TechSales Navigator – AI-Powered Sales Duration Dashboard",
+            shortDesc: "I took the initiative to build TechSales Navigator to address the issue of dead stock in electronic retail inventory management, which frequently inflates operational costs. Through this project, I analyzed 50,000 historical transaction records to identify the shortcomings of manual pricing and designed a fully integrated predictive data workflow. As a result, when a user inputs new device specifications (Category, RAM, ROM, Region, and Price), the machine learning system automatically predicts the estimated days to sell in real time. This automation successfully transformed a manual guesswork process into data-driven analytical decision-making. Additionally, I added a smart recommendation module that automatically provides pricing strategy suggestions and early warnings, helping management quickly optimize supply chain turnover.",
+            fullDesc: "I took the initiative to build TechSales Navigator to address the issue of dead stock in electronic retail inventory management, which frequently inflates operational costs. Through this project, I analyzed 50,000 historical transaction records to identify the shortcomings of manual pricing and designed a fully integrated predictive data workflow. As a result, when a user inputs new device specifications (Category, RAM, ROM, Region, and Price), the machine learning system automatically predicts the estimated days to sell in real time. This automation successfully transformed a manual guesswork process into data-driven analytical decision-making. Additionally, I added a smart recommendation module that automatically provides pricing strategy suggestions and early warnings, helping management quickly optimize supply chain turnover.",
+            tags: ["R", "tidymodels", "Random Forest", "XGBoost", "R Shiny Data Engineering", "Dashboard UI"],
+            category: "data",
+            icon: "💻",
+            iconLabel: "Predictive Analytics",
+            image: "mobilesales-analyst/preview.png",
+            color: "#3498DB",
+            highlights: [{
+                num: "50K+",
+                label: "Historical Data Analyzed"
+            }, {
+                num: "2",
+                label: "Advanced ML Models Deployed"
+            }, {
+                num: "Real-time",
+                label: "Pricing Strategy Recommendations"
+            }],
+            screens: [{
+                image: "mobilesales-analyst/Cuplikan layar 2026-05-29 231639.png",
+                icon: "📈",
+                label: "Sales Trend"
+            }, {
+                image: "mobilesales-analyst/Cuplikan layar 2026-05-29 231918.png",
+                icon: "📋",
+                label: "Pricing Strategy"
+            }, {
+                image: "mobilesales-analyst/Cuplikan layar 2026-05-29 232033.png",
+                icon: "⚙️",
+                label: "Data Configuration"
+            }],
+            github: "https://github.com/nursanst22/mobilephonesales",
+            live: "#"
+        }, {
+            id: 102,
+            title: "Dubai Real Estate Market Intelligence",
+            shortDesc: "I took the initiative to build this market intelligence project to address the challenge of navigating Dubai's highly volatile real estate market. Through this project, I analyzed the shortcomings of static historical reporting and designed a predictive, event-driven time-series analysis using R. As a result, the model not only forecasts property prices for the next 12 months using Auto-ARIMA but also mathematically quantifies the impact of macroeconomic shocks—proving that the Golden Visa policy injected a $174/sqft price spike into the premium segment. Additionally, I integrated a mortgage correlation analysis which uncovered that the luxury market is completely immune to interest rate hikes. This data-driven dashboard ultimately helps investors and developers avoid \"buying at the peak\" and confidently pivot their strategies toward the mid-market segment during the current cooling phase.",
+            fullDesc: "I took the initiative to build this market intelligence project to address the challenge of navigating Dubai's highly volatile real estate market. Through this project, I analyzed the shortcomings of static historical reporting and designed a predictive, event-driven time-series analysis using R. As a result, the model not only forecasts property prices for the next 12 months using Auto-ARIMA but also mathematically quantifies the impact of macroeconomic shocks—proving that the Golden Visa policy injected a $174/sqft price spike into the premium segment. Additionally, I integrated a mortgage correlation analysis which uncovered that the luxury market is completely immune to interest rate hikes. This data-driven dashboard ultimately helps investors and developers avoid \"buying at the peak\" and confidently pivot their strategies toward the mid-market segment during the current cooling phase.",
+            tags: ["R", "Tidyverse", "Time Series / ARIMA", "Data Visualization", "Flexdashboard", "Business Intelligence"],
+            category: "data",
+            icon: "🏷️",
+            iconLabel: "Data Analytics & BI",
+            image: "Dubai-analyst/Cuplikan layar 2026-05-29 194057.png",
+            color: "#9B59B6",
+            highlights: [{
+                num: "12 Mos",
+                label: "Auto-ARIMA forecast projection"
+            }, {
+                num: "$174/sqft",
+                label: "Premium spike quantified"
+            }, {
+                num: "3",
+                label: "Segments Dynamic market segmentation"
+            }],
+            screens: [{
+                image: "Dubai-analyst/Cuplikan layar 2026-05-29 192134.png",
+                icon: "🏢",
+                label: "Market Overview"
+            }, {
+                image: "Dubai-analyst/Cuplikan layar 2026-05-29 194801.png",
+                icon: "📊",
+                label: "ARIMA Forecast"
+            }, {
+                image: "Dubai-analyst/Cuplikan layar 2026-05-29 200841.png",
+                icon: "📉",
+                label: "Macroeconomic Impact"
+            }],
+            github: "https://github.com/nursanst22/Dubai-Realestate",
+            live: "#"
+        }, {
             id: 1,
             title: "E-Commerce Customer Analytics",
             shortDesc: "As a Data Analyst for my final research project, I independently executed the Knowledge Discovery in Databases (KDD) cycle to optimize e-commerce business strategies. I processed a large-scale dataset of 250,000 transactions using R programming to perform data cleaning, missing value handling, and outlier detection. By integrating RFM analysis and PCA dimensionality reduction, I conducted a comparative experiment of four machine learning algorithms : K-Means, DBSCAN, GMM, and Mean-Shift , scientifically proving that K-Means delivered the most optimal segmentation performance. My primary contribution was successfully mapping three strategic customer profiles: Champions, Potential Loyalists, and At-Risk Customers . which I transformed into data-driven marketing recommendations including VIP loyalty programs and reactivation campaigns to reduce customer churn.",
@@ -1738,9 +1809,9 @@
             live: "https://www.figma.com/community/file/1632067112308733760/solvihelp-interactive-repair-solution-platform"
         }, {
             id: 5,
-            title: "Sales Website Design",
-            shortDesc: "[Masukkan deskripsi baru di sini...]",
-            fullDesc: "[Masukkan deskripsi baru di sini...]",
+            title: "NUVEA - Sales Website Design",
+            shortDesc: "This project was created as part of a school assignment where I challenged myself to design a simple yet visually appealing sales website for a beauty brand called NUVEA. At first, I noticed that many online beauty stores looked too crowded and confusing, making it difficult for users to focus on the products. Because of that, I wanted to create a cleaner and more elegant design that feels soft, modern, and easy to explore. I started by choosing a neutral color palette and minimalist layout to represent the premium and feminine identity of the brand. During the design process, one of the challenges was balancing aesthetics and functionality making the website look attractive while still keeping the navigation simple for users. I also experimented with product placement, typography, and spacing to make the interface feel more organized and comfortable to view. In the end, I decided to create this final design because it successfully represented the concept I wanted: a modern beauty sales website with a calm and luxurious atmosphere. This project also helped me improve my UI design skills in Figma, especially in layout composition, color consistency, and creating user-friendly interfaces",
+            fullDesc: "This project was created as part of a school assignment where I challenged myself to design a simple yet visually appealing sales website for a beauty brand called NUVEA. At first, I noticed that many online beauty stores looked too crowded and confusing, making it difficult for users to focus on the products. Because of that, I wanted to create a cleaner and more elegant design that feels soft, modern, and easy to explore. I started by choosing a neutral color palette and minimalist layout to represent the premium and feminine identity of the brand. During the design process, one of the challenges was balancing aesthetics and functionality making the website look attractive while still keeping the navigation simple for users. I also experimented with product placement, typography, and spacing to make the interface feel more organized and comfortable to view. In the end, I decided to create this final design because it successfully represented the concept I wanted: a modern beauty sales website with a calm and luxurious atmosphere. This project also helped me improve my UI design skills in Figma, especially in layout composition, color consistency, and creating user-friendly interfaces",
             tags: ["Figma", "UI Design", "E-Commerce", "Web Design", "Prototyping", "Component Design"],
             category: "design",
             icon: "🛍️",
